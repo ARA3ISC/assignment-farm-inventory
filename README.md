@@ -1,12 +1,12 @@
-# assignment-farm-inventory
+First, a .env file should be present in the working directory (run this command to generate it):
+
+echo "POSTGRES_PASSWORD=1234 POSTGRES_USER=postgres" > .env
 
 Project Overview
-
 
 The Farm Inventory Manager is a CRUD-based application designed to help farmers manage farm supplies efficiently. This project emphasizes user-friendly interaction, allowing for easy management of items like seeds, fertilizers, pesticides, and equipment
 
 Project Logic
-
 
 The project is built with a full-stack setup, combining a React frontend, a Django backend, and PostgreSQL for data storage:
 
@@ -20,7 +20,6 @@ Design: The interface is designed with Figma, focusing on an intuitive, immersiv
 
 Features
 
-
 Add New Item: Users can add new items with details like name, image, quantity, and unit.
 
 View Inventory: Retrieve the list of items.
@@ -28,3 +27,4 @@ View Inventory: Retrieve the list of items.
 Edit Item: Updates item details such as quantity name.
 
 Delete Item: Removes items from inventory as needed.
+

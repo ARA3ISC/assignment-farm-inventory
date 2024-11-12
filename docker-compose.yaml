@@ -1,0 +1,47 @@
+
+services:
+
+  database:
+    image: postgres:latest
+    container_name: database
+    volumes:
+      - ./database/:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    env_file:
+      - .env
+    networks:
+      - mynetwork
+    restart: always
+
+
+  backend:
+    build: ./backend/
+    image: backend
+    container_name: backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend/:/backend/
+    depends_on:
+      - database
+    # env_file:
+    #   - .env
+    networks:
+      - mynetwork
+    restart: always
+
+
+  adminer:
+    image: adminer:latest
+    container_name: adminer
+    restart: always
+    ports:
+      - "8080:8080"
+    networks:
+      - mynetwork
+
+
+networks:
+  mynetwork:
+    driver: bridge
