@@ -1,7 +1,3 @@
-First, a .env file should be present in the working directory (run this command to generate it):
-
-echo "POSTGRES_PASSWORD=1234 POSTGRES_USER=postgres" > .env
-
 Project Overview
 
 The Farm Inventory Manager is a CRUD-based application designed to help farmers manage farm supplies efficiently. This project emphasizes user-friendly interaction, allowing for easy management of items like seeds, fertilizers, pesticides, and equipment

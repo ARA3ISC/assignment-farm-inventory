@@ -1,6 +1,7 @@
 #! /bin/bash
 
 # cd ./Authentication/
+sleep 3
 
 python3 manage.py makemigrations && python3 manage.py migrate
 
