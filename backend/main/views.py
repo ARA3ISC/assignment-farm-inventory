@@ -14,12 +14,9 @@ class ItemsList(generics.ListAPIView):
 	queryset = InventoryItem.objects.all()
 	serializer_class = ListOfItemsSerializer
 
-import logging as logger
 class AddItem(APIView):
 
-
 	def post(self, request):
-		logger.error(f'\n\ndata:{request.data}\n\n')
 
 		serializer = AddItemsSerializer(data=request.data)
 		if serializer.is_valid():

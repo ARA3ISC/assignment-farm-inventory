@@ -57,6 +57,10 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "http://localhost:3000",
+
+    "http://frontend:5173",
+    "http://frontend:3000",
 ]
 
 ROOT_URLCONF = 'farm_inventory.urls'
