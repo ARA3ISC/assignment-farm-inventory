@@ -1,3 +1,7 @@
+To run the project in your localhost, make sure that docker is installed and running, then run the following command in the terminal (in the project directory):
+
+docker-compose up --build
+
 Project Overview
 
 The Farm Inventory Manager is a CRUD-based application designed to help farmers manage farm supplies efficiently. This project emphasizes user-friendly interaction, allowing for easy management of items like seeds, fertilizers, pesticides, and equipment
